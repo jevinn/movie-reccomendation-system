@@ -23,7 +23,7 @@ movies_df = pickle.load(open('movies.pkl', 'rb'))
 movies_list = movies_df['title'].values
 st.title('Movie Recommender System')
 
-similarity = pickle.load(open('similarity.pkl', 'rb'))
+similarity = pickle.load(open('movies_dict.pkl', 'rb'))
 
 selected_movie = st.selectbox('Which movie do you want', movies_list)
 
